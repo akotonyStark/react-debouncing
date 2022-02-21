@@ -30,7 +30,7 @@ function App() {
       <header className='App-header'>
         <input
           type='text'
-          style={{ width: 400, height: 30, padding: 10 }}
+          style={{ width: 400, height: 30, padding: 10, marginBottom: 100 }}
           placeholder='search here'
           onKeyDown={(e) => optimizedFn(e.target.value)}
         />
@@ -50,8 +50,9 @@ export default App
 
 const styles = {
   results: {
-    height: 40,
-    width: 423,
+    height: 100,
+    maxHeight: 100,
+    width: '70%',
     background: 'white',
     color: 'black',
     marginTop: 1,
