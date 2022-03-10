@@ -1,7 +1,7 @@
 import React from 'react'
 import { useCallback, useState } from 'react'
 const DebouncingFromScratch = () => {
-  const [suggestions, setSuggestions] = useState('')
+  const [suggestions, setSuggestions] = useState([])
 
   const debounce = (func) => {
     let timer
